@@ -1,6 +1,5 @@
-https://letssubdomain.platform.cloudcredo.io
-
-A web app to enable [Cloud Foundry for Beginners: Zero to Hero](https://github.com/CloudCredo/training-cf-for-beginners)
+[A web app](https://letssubdomain.platform.cloudcredo.io) to enable
+[Cloud Foundry for Beginners: Zero to Hero](https://github.com/CloudCredo/training-cf-for-beginners)
 trainees to integrate a custom domain with their Cloud Foundry app.
 
 The app itself talks to the AWS Route53 API to register custom subdomains.
