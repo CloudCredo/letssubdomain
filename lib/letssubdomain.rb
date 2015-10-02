@@ -1,4 +1,4 @@
-class App
+class LetsSubdomain
   def initialize(dns_client:)
     @dns_client = dns_client
   end

@@ -1,9 +1,7 @@
-require "app"
+require "letssubdomain"
 
-RSpec.describe App do
-  subject(:app) { App.new(
-    dns_client: dns_client,
-  ) }
+RSpec.describe LetsSubdomain do
+  subject(:app) { LetsSubdomain.new(dns_client: dns_client) }
   let(:dns_client) { double(:dns_client, resolve_dns_entry: dns_client_response) }
   let(:success) { double(:success, call: nil) }
   let(:failure) { double(:failure, call: nil) }
