@@ -20,11 +20,11 @@ helpers do
   end
 
   def domain_name_scope
-    ENV.fetch("DOMAIN_NAME_SCOPE", "cf-z2h")
+    ENV.fetch("DOMAIN_NAME_SCOPE", "cf-hero")
   end
 
   def fqdns
-    domain.records(/cf-z2h/).map(&:name)
+    domain.records(/#{domain_name_scope}.#{domain_name}/).map(&:name)
   end
 end
 
