@@ -14,7 +14,7 @@ module LetsSubdomain
         return "#{fqdn(name)} now resolves to #{ips.join(", ")}"
       end
     rescue NoMethodError
-      "#{fqdn(name)} cannot be modified"
+      "#{fqdn(name)} cannot be resolved"
     end
 
     def delete_record(name:)

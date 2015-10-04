@@ -80,7 +80,7 @@ module LetsSubdomain
 
               expect(
                 domain.add_record(name: subdomain, ips: ["2.2.2.2"])
-              ).to eq("letssubdomain-integrated-spec.ccp-dev.com cannot be modified")
+              ).to eq("letssubdomain-integrated-spec.ccp-dev.com cannot be resolved")
 
               expect(
                 domain.get_record(name: subdomain).value

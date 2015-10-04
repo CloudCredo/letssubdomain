@@ -33,7 +33,7 @@ get "/" do
 end
 
 post "/subdomain" do
-  name = [params[:subdomain], domain_name_scope].join("-")
+  name = [params[:subdomain], domain_name_scope].join(".")
   session.store(:message, domain.add_record(name: name, ips: ips))
   redirect to("/")
 end
