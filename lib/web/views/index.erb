@@ -1,0 +1,18 @@
+<% if session[:message] %>
+  <h3><%= session[:message] %></h3>
+<% session.delete(:message) # delete after displaying %>
+<% end %>
+
+<form method="post" action="/subdomain">
+  <input type="text" name="subdomain" id="subdomain" value="" placeholder="hero" required="true" />-<%= domain_name_scope %>.<%= domain_name %>
+  <input type="submit" value="Reserve" />
+</form>
+
+<% if fqdns.any? %>
+  <p>Already reserved:</p>
+  <ul>
+    <% fqdns.each do |fqdn| %>
+      <li><%= fqdn %></li>
+    <% end %>
+  </ul>
+<% end %>
