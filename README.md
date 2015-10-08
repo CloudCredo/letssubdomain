@@ -1,4 +1,4 @@
-## What we have learned
+## What we learned
 
 Even though this app was well intended, we've realises that it's not actually
 required. AWS Route53 supports multi-level wildcard records. In plain English,
