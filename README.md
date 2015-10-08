@@ -19,7 +19,7 @@ foo.bar.baz.cf-hero.cloudcredo.io. 300 IN A	54.175.58.208
 foo.bar.baz.cf-hero.cloudcredo.io. 300 IN A	52.20.111.137
 ```
 
-We've also learned that when we a new record gets registered, it takes a few
+We've also learned that when a new record gets registered, it takes a few
 minutes for it to propagate, even to the uber popular Google's Public DNS
 resolution service.
 
