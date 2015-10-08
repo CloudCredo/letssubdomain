@@ -1,6 +1,6 @@
 ## What we learned
 
-Even though this app was well intended, we've realises that it's not actually
+Even though this app was well intended, we've realised that it's not actually
 required. AWS Route53 supports multi-level wildcard records. In plain English,
 if `*.cf-hero.cloudcredo.io` is resolved, all subdomains, regardless of level,
 will resolve to the same endpoints, e.g.:
